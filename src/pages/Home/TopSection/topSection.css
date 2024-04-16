@@ -1,0 +1,93 @@
+/* Web view styles */
+@media (min-width: 768px) {
+    .topSection {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+    }
+
+    .backgroundImage {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .rightText {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        color: black;
+        font-size: 18px;
+        animation: slideFromTop 1s ease-in-out;
+    }
+
+    @keyframes slideFromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .additionalImage {
+        position: absolute;
+        top: -16px;
+        right: 50px;
+        width: 370px;
+        height: 390px;
+        /* background-image: url('https://images.pexels.com/photos/9951386/pexels-photo-9951386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-size: cover;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+/* Mobile view styles */
+@media (max-width: 767px) {
+    .topSection {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .backgroundImage {
+        position: relative;
+        width: 100%;
+        height:35vh;
+        background-image: url('https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    .rightText {
+        position: absolute;
+        color: black;
+        font-size: 16px;
+        animation: slideFromTop 1s ease-in-out;
+    }
+
+    .additionalImage {
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+        background-image: url('https://images.pexels.com/photos/9951386/pexels-photo-9951386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    }
+}

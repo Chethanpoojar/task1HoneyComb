@@ -1,0 +1,36 @@
+/* Web view styles */
+@media (min-width: 768px) {
+    .topBar {
+        width: 100%;
+        height: 5vh;
+    }
+    
+    .topSection {
+        width: 100%;
+        height: 55vh;
+    }
+    
+    .bottomSection {
+        width: 100%;
+        /* height: 45vh; */
+    }
+}
+
+ /* Mobile view styles  */
+
+@media (max-width: 767px) {
+    .topBar {
+        width: 100%;
+        height: 2vh;
+    }
+    
+    .topSection {
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .bottomSection {
+        width: 100%;
+        height: 55vh;
+    }
+}
